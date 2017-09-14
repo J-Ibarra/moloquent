@@ -47,5 +47,18 @@
       "tests/models",
       "tests/seeds"
     ]
+  },
+  "extra":{
+    "laravel":{
+      "provider": [
+        "Moloquent\\MongodbServiceProvider",
+        "Moloquent\\Auth\\PasswordResetServiceProvider",
+        "Moloquent\\MongodbQueueServiceProvider",
+        "Moloquent\\Passport\\PassportServiceProvider"
+      ],
+      "aliases": {
+        "Moloquent" : "Moloquent\\Eloquent\\Model"
+      }
+    }
   }
 }
